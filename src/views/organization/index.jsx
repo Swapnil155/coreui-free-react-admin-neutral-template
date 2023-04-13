@@ -3,8 +3,7 @@ import CIcon from '@coreui/icons-react'
 import { CButton, CCard, CCardBody, CCardHeader, CCol, CRow, CTable } from '@coreui/react'
 import React, { useEffect, useState } from 'react'
 import Table from 'src/views/Table'
-import * as icon from '@coreui/icons';
-
+import * as icon from '@coreui/icons'
 
 export default function Organization() {
   return (
@@ -17,7 +16,9 @@ export default function Organization() {
                 <strong>All Deatils</strong>
               </CCol>
               <CCol xs="auto">
-                <CButton color="success"><CIcon icon={icon.cilPlus} /> Add</CButton>
+                <CButton color="success" href={`/Organization/Update`}>
+                  <CIcon icon={icon.cilPlus} /> Add
+                </CButton>
               </CCol>
             </CRow>
           </CCardHeader>
